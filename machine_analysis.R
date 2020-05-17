@@ -100,6 +100,9 @@ sublist1[[2]][2]
 sublist1$Stats[2]
 #single square brackets are for subsetting and double square brackets are for accessing elements 
 # double square brackets are NOT for subsetting (allow accessing only single element)
+
+#Plot 
+
 library(ggplot2)
 p <- ggplot(data=util)
 p + geom_line(aes(x=PosixTime, y=Utilization, color=Machine), size=1.2)+ facet_grid(Machine ~.)+
